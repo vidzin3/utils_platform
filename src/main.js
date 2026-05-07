@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { registerServices } from '@/core/registerService.js';
-import { registerComponents } from '@/core/registerComponent.js';
+import router from './plugins/router';
 
 import "@/@iconify/icons-bundle";
 import "@/assets/font.css";
@@ -10,7 +9,6 @@ import "@/assets/global.css";
 
 const app = createApp(App)
 
-registerServices(app)
-registerComponents(app)
+app.use(router)
 
 app.mount('#app')
