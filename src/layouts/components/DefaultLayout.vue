@@ -6,7 +6,7 @@
   <main class="w-full">
     <div class="flex item-center justify-center w-full">
       <div class="w-full md:w-[90%] lg:w-1/2 p-2">
-        <RouterView :key="$route.fullPath" />
+        <RouterView />
       </div>
     </div>
   </main>
