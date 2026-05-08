@@ -177,6 +177,40 @@ const contents = [
       }`,
     raw_html: ""
   },
+  {
+    title: "Version of System DEF Pursat",
+    description: "",
+    is_content: true,
+    content: `
+    1.0.0: Initial project System
+    1.1.0: Restructure project (rebuild whole system)
+    1.2.0: Update system features
+    2.0.0: System finished and released
+    2.0.2: Update revenue and finance flow
+    2.0.3: Update feature approved
+    2.0.3.1: Fix save transaction error when network interrupted
+    2.0.3.2: Update search and filter on list letter (in,out)
+    2.0.4: Update users security
+    2.0.4.1: Add encryption user data
+    2.0.5: Add agreement feature
+    2.0.6: Update workplan feature
+    2.0.7: Changed approved action on list letter
+    2.0.8: Update Letter (short hand send transaction)
+            selected user in list and send as send by
+            clear by form by change tab working flow
+            fix transaction controller and auto approved when send to boss
+    2.0.9: Update notifications
+            ui design update
+            data reduced loaded
+            recreate router when route path changed
+            fix navigation notification link
+    2.1.0: Update Letter Report
+            fix report letter invalid date in end date not end in times
+            fix UI report event
+            fix calendar event status
+            add no data available to report table`,
+    raw_html: ""
+  },
 ]
 </script>
 
