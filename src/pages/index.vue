@@ -218,6 +218,48 @@ const contents = [
             add no data available to report table`,
     raw_html: ""
   },
+  {
+    title: "Version of System DEF Pursat",
+    description: "",
+    is_content: true,
+    content: `
+    1. Manual Cleanup Method
+    When removing a component/element, call a cleanup function first to remove event listeners or clear timers.
+    function cleanup() {
+      window.removeEventListener('resize', handleResize);
+      clearInterval(timerId);
+      console.log('Component cleaned up');
+    }
+    // When you need to remove the component
+    function destroyComponent(element) {
+      cleanup(); // Perform cleanup before removal
+      element.remove();
+    }
+      
+    2. Using MutationObserver
+    You can observe the parent element to detect when a child is removed from the DOM, allowing you to run cleanup logic automatically.
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.removedNodes.forEach((node) => {
+          if (node.id === 'my-component') {
+            console.log('Component removed, running cleanup...');
+            // Perform cleanup here
+            observer.disconnect(); // Stop observing if necessary
+          }
+        });
+      });
+    });
+    // Observe the parent
+    observer.observe(document.getElementById('parent'), { childList: true });
+    
+    3. Page Unload EventIf the "unmount" is for the entire page, use beforeunload.
+    window.addEventListener('beforeunload', (event) => {
+      // Perform final cleanup (limited actions possible)
+      event.preventDefault();
+      event.returnValue = '';
+    });`,
+    raw_html: ""
+  },
 ]
 </script>
 

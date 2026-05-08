@@ -6,12 +6,12 @@ import "@/assets/font.css";
 import "@/assets/base.css";
 import "@/assets/global.css";
 
-import { registerServices } from './core/registerService';
-import { registerComponents } from './core/registerComponent';
+import router from './plugins/router';
+import { Icon } from '@iconify/vue/dist/iconify.js';
 
 const app = createApp(App)
 
-registerServices(app)
-registerComponents(app)
+app.use(router)
+app.component('Icon', Icon)
 
 app.mount('#app')
