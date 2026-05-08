@@ -75,6 +75,13 @@ const contents = [
           <div class="text-xs text-zinc-600 dark:text-zinc-400">Build fast, responsive sites with Bootstrap Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</div>
         </div>
       </div>
+      <div class="flex items-center gap-3">
+        <img class="h-10 w-10 object-cover border border-zinc-200 dark:border-zinc-700 p-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAAUElEQVR4Ae3RAQbAQAxE0QXYM4e5Ro7zrxQUgJRCoFCiaPMO8A2zxnhKErAamVlmuvsUf1vcewPNG49LczEiPlmU1FUswO3XVewC1NcvG+MEvqR7x4wP3WYAAAAASUVORK5CYII=">
+        <div class="flex flex-col">
+          <div class="font-semibold text-sm text-zinc-900 dark:text-zinc-50">Shadcn UI</div>
+          <div class="text-xs text-zinc-600 dark:text-zinc-400">The Foundation for your Design System A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.</div>
+        </div>
+      </div>
     `
   },
   {

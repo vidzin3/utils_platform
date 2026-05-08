@@ -1,8 +1,9 @@
+<script setup>
+import Header from './Header.vue';
+</script>
 <template>
-  <div class="p-2 border-b border-gray-950/5 dark:border-white/10 flex gap-2 text-xl font-extrabold">
-    <span class="text-sky-400">{ } /_</span>
-    <span class="">Utils Platform</span>
-  </div>
+  <Header />
+
   <main class="w-full">
     <div class="flex item-center justify-center w-full">
       <div class="w-full md:w-[90%] lg:w-1/2 p-2">
