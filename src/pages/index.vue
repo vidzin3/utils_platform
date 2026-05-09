@@ -1,17 +1,224 @@
 <script setup>
-import CardListView from '@/components/CardListView.vue';
+import CardListView from "@/components/CardListView.vue";
 
 const contents = [
   {
     title: "{ } / _ Utils Platform",
-    description: "This website i make it up for note or store something like [ code, documents, file, list, detail, image, event, structure, architecture, design, ... ].",
+    description:
+      "This website i make it up for note or store something like [ code, documents, file, list, detail, image, event, structure, architecture, design, ... ].",
     is_content: false,
     content: "",
-    raw_html: ""
+    raw_html: "",
+  },
+  // {
+  //   title: "Planning budget",
+  //   description: "",
+  //   is_content: true,
+  //   content: `
+  //     1 - Get 400$ salary bonus add to saving money up to 1000$
+
+  //     2 - month 7/8 birthday sister and brother
+  //       Gifts:
+  //         - sister: Keyboard (budget: 20-40$) 
+  //         - brother: Watch (budget: 10-20$)
+
+  //     3 - salary month-5: 200$
+  //       saving: 100$ as possible, if not (saving = saving - 50$) { return spending += 50$}
+  //       spending: 100$ as possible, will increase 50$ (150$/month)
+        
+  //     4 - Buy new watch (smart watch or Casio watch)
+  //       Casio: [ f91w, a158, a168 ] (budget: 10-15$)
+  //       Smart watch: [
+  //         (cmf watch pro 2, 60-70$),
+  //         (amafit, 50-100$),
+  //         (apple watch, 50-100$)
+  //       ]
+  //   `,
+  //   raw_html: "",
+  // },
+  {
+    title: "Planning budget",
+    description: "",
+    is_content: false,
+    content: ``,
+    raw_html: `
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold">
+              1
+            </div>
+            <h2 class="text-xl font-semibold">Savings Goal</h2>
+          </div>
+          <div class="bg-zinc-800/60 rounded-xl p-4 border border-zinc-700">
+            <p class="text-zinc-300">
+              Get <span class="text-green-400 font-semibold">$400</span> salary bonus
+              and add it to savings until reaching
+              <span class="text-cyan-400 font-semibold">$1000</span>.
+            </p>
+            <div class="mt-4">
+              <div class="flex justify-between text-sm mb-2 text-zinc-400">
+                <span>Progress</span>
+                <span>500$+$400 / $1000</span>
+              </div>
+              <div class="w-full h-3 bg-zinc-700 rounded-full overflow-hidden relative">
+                <div class="absolute h-full w-[90%] bg-gradient-to-r from-green-400 to-red-400 rounded-full"></div>
+                <div class="absolute h-full w-[50%] bg-gradient-to-r from-green-400 to-cyan-400 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">
+              2
+            </div>
+            <h2 class="text-xl font-semibold">Birthday Gifts (Month 7/8)</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold text-lg">🎹 Sister</h3>
+                <span class="text-sm bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full">
+                  $20 - $40
+                </span>
+              </div>
+              <p class="mt-3 text-zinc-300">
+                Buy a keyboard as a birthday gift.
+              </p>
+            </div>
+
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold text-lg">⌚ Brother</h3>
+                <span class="text-sm bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full">
+                  $10 - $20
+                </span>
+              </div>
+              <p class="mt-3 text-zinc-300">
+                Buy a watch as a birthday gift.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center font-bold">
+              3
+            </div>
+            <h2 class="text-xl font-semibold">Monthly Budget Plan</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5">
+
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <p class="text-zinc-400 text-sm mb-2">Monthly Salary</p>
+              <h3 class="text-3xl font-bold text-green-400">$200</h3>
+            </div>
+
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <p class="text-zinc-400 text-sm mb-2">Savings Target</p>
+
+              <div class="space-y-2">
+                <div class="flex justify-between">
+                  <span>Preferred</span>
+                  <span class="text-cyan-400 font-semibold">$100</span>
+                </div>
+
+                <div class="flex justify-between">
+                  <span>Minimum</span>
+                  <span class="text-yellow-400 font-semibold">$50</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-5 bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+            <h4 class="font-semibold mb-3 text-lg">Spending Rules</h4>
+
+            <div class="space-y-2 text-zinc-300">
+              <div class="flex justify-between">
+                <span>Normal Spending</span>
+                <span>$100/month</span>
+              </div>
+
+              <div class="flex justify-between">
+                <span>Max Spending</span>
+                <span class="text-orange-400">$150/month</span>
+              </div>
+
+              <div class="mt-4 p-4 bg-zinc-900 rounded-lg border border-zinc-700 text-sm text-zinc-400">
+                If savings cannot reach <span class="text-cyan-400">$100</span>,
+                reduce savings by <span class="text-yellow-400">$50</span>
+                and increase spending budget by <span class="text-orange-400">$50</span>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-lg">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+              4
+            </div>
+            <h2 class="text-xl font-semibold">New Watch Wishlist</h2>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-5">
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg">⌚ Casio Watches</h3>
+                <span class="text-sm bg-green-500/20 text-green-300 px-3 py-1 rounded-full">
+                  $10 - $15
+                </span>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">F91W</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">A158</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">A168</span>
+              </div>
+            </div>
+
+            <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="font-semibold text-lg">📱 Smart Watches</h3>
+                <span class="text-sm bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">
+                  $50 - $100
+                </span>
+              </div>
+
+              <div class="space-y-3">
+
+                <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
+                  <span>CMF Watch Pro 2</span>
+                  <span class="text-cyan-300">$60 - $70</span>
+                </div>
+
+                <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
+                  <span>Amazfit</span>
+                  <span class="text-cyan-300">$50 - $100</span>
+                </div>
+
+                <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
+                  <span>Apple Watch</span>
+                  <span class="text-cyan-300">$50 - $100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `,
   },
   {
     title: "C++ API Server",
-    description: "Make C++ http server to request and response as api web service. it may write hard then php/python.",
+    description:
+      "Make C++ http server to request and response as api web service. it may write hard then php/python.",
     is_content: true,
     content: `#include "crow.h"
               int main() {
@@ -32,7 +239,7 @@ const contents = [
 
                 app.port(18080).multithreaded().run();
               }`,
-    raw_html: ""
+    raw_html: "",
   },
   {
     title: "UI framework collection for Vue 3",
@@ -82,7 +289,7 @@ const contents = [
           <div class="text-xs text-zinc-600 dark:text-zinc-400">The Foundation for your Design System A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code.</div>
         </div>
       </div>
-    `
+    `,
   },
   {
     title: "Laravel 12 Setup Auth, Middleware",
@@ -123,11 +330,12 @@ const contents = [
                     - use: HasApiTokens // for Laravel passport, remove it if jwt
                     - function : getJWTIdentifier() => getKey();
                         : getJWTCustomClaims() => [];`,
-    raw_html: ""
+    raw_html: "",
   },
   {
     title: "Laravel 10 Decrypt Request Methods",
-    description: "Decrypt Request Payload from client-side that Encrypt Security for sensitive data.",
+    description:
+      "Decrypt Request Payload from client-side that Encrypt Security for sensitive data.",
     is_content: true,
     content: `// php artisan make:middleware DecryptRequest 
       <?php
@@ -182,7 +390,7 @@ const contents = [
       {
         // just use request normally because $request is already decrypt in middleware
       }`,
-    raw_html: ""
+    raw_html: "",
   },
   {
     title: "Version of System DEF Pursat",
@@ -216,8 +424,15 @@ const contents = [
             fix UI report event
             fix calendar event status
             add no data available to report table`,
-    raw_html: ""
+    raw_html: "",
   },
+  // {
+  //   title: "Planning Finishing System DEF",
+  //   description: "",
+  //   is_content: true,
+  //   content: ``,
+  //   raw_html: ""
+  // },
   {
     title: "BeforeUnmounted by vanilla javascript",
     description: "",
@@ -258,11 +473,13 @@ const contents = [
       event.preventDefault();
       event.returnValue = '';
     });`,
-    raw_html: ""
+    raw_html: "",
   },
   {
-    title: "How to detect a click outside of an element with vanilla JavaScript",
-    description: "A simple way to detect a click outside of an element with vanilla JavaScript",
+    title:
+      "How to detect a click outside of an element with vanilla JavaScript",
+    description:
+      "A simple way to detect a click outside of an element with vanilla JavaScript",
     is_content: true,
     content: `
     index.html
@@ -311,15 +528,15 @@ const contents = [
         display: block;
       }
     }`,
-    raw_html: ""
+    raw_html: "",
   },
-]
+];
 </script>
 
 <template>
   <div>
-    <template v-for="(item,index) in contents" :key="index">
-      <CardListView  
+    <template v-for="(item, index) in contents" :key="index">
+      <CardListView
         :title="item.title"
         :description="item.description"
         :content="item.content"
