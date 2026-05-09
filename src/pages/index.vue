@@ -219,7 +219,7 @@ const contents = [
     raw_html: ""
   },
   {
-    title: "Version of System DEF Pursat",
+    title: "BeforeUnmounted by vanilla javascript",
     description: "",
     is_content: true,
     content: `
@@ -258,6 +258,59 @@ const contents = [
       event.preventDefault();
       event.returnValue = '';
     });`,
+    raw_html: ""
+  },
+  {
+    title: "How to detect a click outside of an element with vanilla JavaScript",
+    description: "A simple way to detect a click outside of an element with vanilla JavaScript",
+    is_content: true,
+    content: `
+    index.html
+    <button>Toggle box</button>
+
+    <div class="box">
+      <form action="">
+        <input type="text">
+        <button type="button">Search</button>
+      </form>
+    </div>
+    
+    script.js
+    // Example
+    const button = document.querySelector('button')
+    const box = document.querySelector('.box');
+
+    const toggle = event => {
+      event.stopPropagation(); // to targeted the main element that clicked! like click on child but in parent el
+      
+      if (!event.target.closest('.box')) {  <--- <button type="button">Search</button>
+        console.log('Click outside');
+
+        box.classList.toggle('active');
+
+        box.classList.contains('active')
+          ? document.addEventListener('click', toggle)
+          : document.removeEventListener('click', toggle);
+
+      } else { <--- <button>Toggle box</button>
+        console.log('Click inside'); 
+      }
+    }
+
+    button.addEventListener('click', toggle);
+    
+    style.css
+    .box {
+      position: absolute;
+      display: none;
+      margin-top: 8px;
+      padding: 20px;
+      background: lightgray;
+      
+      &.active {
+        display: block;
+      }
+    }`,
     raw_html: ""
   },
 ]

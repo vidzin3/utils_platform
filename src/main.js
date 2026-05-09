@@ -1,13 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './plugins/router';
+import { Icon } from '@iconify/vue/dist/iconify.js';
 
 import "@/@iconify/icons-bundle";
 import "@/assets/font.css";
 import "@/assets/base.css";
 import "@/assets/global.css";
-
-import router from './plugins/router';
-import { Icon } from '@iconify/vue/dist/iconify.js';
 
 const app = createApp(App)
 

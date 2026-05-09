@@ -7,7 +7,7 @@ import Header from './Header.vue';
   <main class="w-full">
     <div class="flex item-center justify-center w-full">
       <div class="w-full md:w-[90%] lg:w-1/2 p-2">
-        <RouterView />
+        <RouterView :key="$route.fullPath" />
       </div>
     </div>
   </main>
