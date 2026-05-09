@@ -55,10 +55,11 @@ onBeforeUnmount(() => {
         <span class="">Utils Platform</span>
       </div>
       <button
-        class="rounded-full hover:dark:*:bg-white/15!"
+        class="rounded-full hover:dark:*:bg-white/15! cursor-pointer"
         @click.stop.prevent="onClickMenu"
       >
-        <Icon class="rounded-full p-1" width="28" icon="mdi:menu"></Icon>
+        <!-- <Icon class="rounded-full p-1" width="28" icon="mdi:menu"></Icon> -->
+         MENU
       </button>
     </div>
   </div>
