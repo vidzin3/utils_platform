@@ -205,7 +205,7 @@ const contents = [
                 </div>
 
                 <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
-                  <span>Apple Watch</span>
+                  <span>Apple Watch (S3,S4,S5,S6)</span>
                   <span class="text-cyan-300">$50 - $100</span>
                 </div>
               </div>
