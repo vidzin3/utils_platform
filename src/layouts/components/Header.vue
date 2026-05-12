@@ -1,5 +1,7 @@
 <script setup>
+import router from "@/plugins/router";
 import { onBeforeUnmount, ref, watch } from "vue";
+import home_logo from '@/assets/images/image_logo.png'
 
 const menu = ref(false);
 
@@ -23,6 +25,12 @@ const handleEventClickOutside = (e) => {
     menu.value = false;
   }
 };
+
+const onToLink = (route) => {
+  router.push({
+    name: route
+  })
+}
 
 watch(
   () => menu.value,
@@ -66,6 +74,7 @@ onBeforeUnmount(() => {
 
   <div
     v-if="menu"
+    style="z-index: 1000;"
     class="w-[90%] lg:w-[30%] h-[300px] fixed m-auto inset-0 overflow-hidden menu"
     id="menu_ref"
   >
@@ -77,7 +86,24 @@ onBeforeUnmount(() => {
         <span class="size-3 rounded-full bg-yellow-400"></span>
         <span class="size-3 rounded-full bg-green-500"></span>
       </div>
-      <div class="p-2"></div>
+      <div class="p-2 flex flex-col gap-2 overflow-auto">
+        <div class="p-1 cursor-pointer hover:bg-white/15 rounded-xl" @click.prevent="onToLink('home')">
+          <div class="flex items-center gap-3">
+            <img class="h-10 w-10 object-cover border border-zinc-200 rounded-full dark:border-zinc-700 p-1" :src="home_logo">
+            <div class="flex flex-col">
+              <div class="font-semibold text-sm text-zinc-900 dark:text-zinc-50">Home</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-1 cursor-pointer hover:bg-white/15 rounded-xl" @click.prevent="onToLink('lesson')">
+          <div class="flex items-center gap-3">
+            <img class="h-10 w-10 object-cover border border-zinc-200 rounded-full dark:border-zinc-700 p-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEVHcEz8tzH9tzH/ujDZojXrrTMzP0cyKUYQLEmhgT1xZUJVU0WyQjj2UC3eSzG/kzmiPDvJSDXvTy+MdUB1NECmhTyHOz6NdkBQMkSXej7MLnrvAAAAAnRSTlMAozlMP2oAAAFCSURBVHgBddJBlsMgCADQVILYKFQZa+39LzpVTewsxg3xfYP4YNtu5p91+zY4w9JFO8In4L54IACgJXcHuDuyCAALAQ9vAws9HiQcrD8QLkQXU1Dl+PMTWTWk6PBEuGdWXsjK+QkDwRyFVRu+XnF8lcNAR/SV2umUJjIrVY8N4YhcapJAE0sJtXA8oKET1VidSzxQSg6q4jr60MpJ7fSZlpWDb4i2l8NCaeIoyaLZwM89hzAw5b6PHjbjuvB6Sqgd1ZkNG0rN6UIhGYgzbYoUeCKX3GrqadGWljLV68/qKJds8YPwqL2imgYKRUkh0qO/85kb8ol5PDU/O+7E32lTL4dpb2jMkUUipatlKiL5gNnst3UkvYv9Ci7OvteYANrAHCyeEWBi590S2R1mbLSwTeZuYMWB11AD/I1r5Nda67b9AugLHu5rQK5dAAAAAElFTkSuQmCC">
+            <div class="flex flex-col">
+              <div class="font-semibold text-sm text-zinc-900 dark:text-zinc-50">Lesson</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
