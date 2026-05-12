@@ -426,8 +426,9 @@ const contents = [
             add no data available to report table
     2.1.1: Update Event
             add Card when hover on event forward
-            fix formatting time
-            add direct to event show in card event by month dashboard`,
+            fix formatting datetime
+            add direct to event show in card event by month dashboard
+            change title employee by position report`,
     raw_html: "",
   },
   // {
