@@ -534,6 +534,38 @@ const contents = [
     }`,
     raw_html: "",
   },
+  {
+    title: "How to create link to download excels",
+    description: "",
+    is_content: true,
+    content: `
+      format header content
+      {
+        "Content-Type":"application/vnd.ms-excel", // excel accepted header content type
+        responseType:"blob"
+      }
+      // it accepted header if it multiple file, excel content, word, pdf
+      // and responseType must be blob
+
+      + create Url data
+      let fileUrl = window.URL.createObjectURL() // generate URL by blob
+                      new Blob([<data response>]) // read raw data and convert into a readableStream (byte data)
+      - combine blob in to createObjectURL(new Blob([<data response>]));
+
+      + after that we need to create element to trigger download
+      let fileLink = document.createElement('a')
+      fileLink.href = fileUrl
+      fileLink.setAttribute('download', 'title.xlsx');
+      
+      add element to body
+      document.body.appendChild(fileLink)
+      fileLink.click(); // on click auto
+      
+      then remove element from body
+      document.body.removeChild(fileLink)
+      window.URL.revokeObjectURL(fileURL); // if link is releases an existing object URL which was previously created by calling URL.createObjectURL().`,
+    raw_html: "",
+  },
 ];
 </script>
 
