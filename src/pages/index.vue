@@ -423,7 +423,11 @@ const contents = [
             fix report letter invalid date in end date not end in times
             fix UI report event
             fix calendar event status
-            add no data available to report table`,
+            add no data available to report table
+    2.1.1: Update Event
+            add Card when hover on event forward
+            fix formatting time
+            add direct to event show in card event by month dashboard`,
     raw_html: "",
   },
   // {
