@@ -428,7 +428,11 @@ const contents = [
             add Card when hover on event forward
             fix formatting datetime
             add direct to event show in card event by month dashboard
-            change title employee by position report`,
+            change title employee by position report
+    2.1.2: Update all Report
+            fix responsive template
+            fix width cell in each table report
+            fix not border print on pdf export`,
     raw_html: "",
   },
   // {
