@@ -7,7 +7,44 @@ const contents = [
     description: `Hashing, encoding, and encryption are distinct methods for transforming data based on purpose. Hashing ensures integrity via irreversible, fixed-length signatures (e.g., SHA-256). Encryption secures confidentiality with keys, allowing for two-way, reversible communication. Encoding transforms data formats for compatibility using public algorithms (e.g., Base64)`,
     is_content: false,
     content: "",
-    raw_html: "",
+    raw_html: `
+      <div class="w-full overflow-auto">
+        <table class="border-collapse border border-gray-400 w-full table-auto">
+          <thead class="bg-gray-50 dark:bg-gray-700">
+            <tr>
+              <th class="text-left border p-2 font-semibold text-gray-900 dark:border-gray-600 dark:text-gray-200">Feature (មុខងារ)</th>
+              <th class="text-left border p-2 font-semibold text-gray-900 dark:border-gray-600 dark:text-gray-200">Purpose (គោលបំណង)</th>
+              <th class="text-left border p-2 font-semibold text-gray-900 dark:border-gray-600 dark:text-gray-200">Reversible (បកប្រែ)</th>
+              <th class="text-left border p-2 font-semibold text-gray-900 dark:border-gray-600 dark:text-gray-200">Key Used</th>
+              <th class="text-left border p-2 font-semibold text-gray-900 dark:border-gray-600 dark:text-gray-200">Output Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Hashing</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Integrity/Fingerprinting</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">No (One-way)</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">No (Algorithm dependent)</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Fixed-length</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Encryption</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Confidentiality/Security</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Yes (Two-way)</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Yes (Public/Private)</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Variable/Ciphertext</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Encoding</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Data Format Transformation</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Yes (Two-way)</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">No</td>
+              <td class="border border-gray-300 p-2 text-gray-500 dark:border-gray-700 dark:text-gray-400">Variable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `,
   },
 ];
 </script>
