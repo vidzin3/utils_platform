@@ -47,8 +47,8 @@ const contents = [
     `,
   },
   {
-    title: "Data Security Algorithms",
-    description: `Hashing, encoding, and encryption are distinct methods for transforming data based on purpose. Hashing ensures integrity via irreversible, fixed-length signatures (e.g., SHA-256). Encryption secures confidentiality with keys, allowing for two-way, reversible communication. Encoding transforms data formats for compatibility using public algorithms (e.g., Base64)`,
+    title: "Failure of routing page by Apache web server",
+    description: `.htaccess (Hypertext Access) is a powerful, distributed configuration file used by Apache web servers to manage settings on a per-directory basis without editing the main server config. It enables features like URL rewrites, custom error pages, password protection, and security restrictions by placing text-based rules in directories.`,
     is_content: true,
     content: `
       .htaccess for build frontend
