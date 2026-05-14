@@ -46,6 +46,27 @@ const contents = [
       </div>
     `,
   },
+  {
+    title: "Data Security Algorithms",
+    description: `Hashing, encoding, and encryption are distinct methods for transforming data based on purpose. Hashing ensures integrity via irreversible, fixed-length signatures (e.g., SHA-256). Encryption secures confidentiality with keys, allowing for two-way, reversible communication. Encoding transforms data formats for compatibility using public algorithms (e.g., Base64)`,
+    is_content: true,
+    content: `
+      .htaccess for build frontend
+      -> make file name .htaccess
+      -> write into file
+        <IfModule mode_rewriter.c>
+          RewriteEngine on
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+
+          RewriteRule ^ index.html [L]
+        </IfModule>
+
+      -> Copy in to build dist frontend
+        cp .htaccess ./dist
+    `,
+    raw_html: ``,
+  },
 ];
 </script>
 
