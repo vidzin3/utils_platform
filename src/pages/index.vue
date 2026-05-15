@@ -432,7 +432,11 @@ const contents = [
     2.1.2: Update all Report
             fix responsive template
             fix width cell in each table report
-            fix not border print on pdf export`,
+            fix not border print on pdf export
+    2.1.3: Update menu layout
+            add option layout for mobile breakpoint
+            alt report workplan text when work not done
+            add office filter to list all letter`,
     raw_html: "",
   },
   // {
