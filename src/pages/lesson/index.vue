@@ -67,6 +67,31 @@ const contents = [
     `,
     raw_html: ``,
   },
+  {
+    title: "select exists in raw sql and laravel",
+    description: `select(DB::raw(1)) is commonly used inside EXISTS because MySQL only checks whether a row exists — it does not care what columns are selected.`,
+    is_content: true,
+    content: `
+    So this:
+
+    ->orWhereExists(function ($sub) use ($currentOfficeId) {
+
+      $sub->select(DB::raw(1))
+          ->from('employees as e1')
+          ->whereColumn('e1.id', 'letters.created_by')
+          ->where('e1.office_id', $currentOfficeId);
+    });
+
+    generates SQL like:
+
+    OR EXISTS (
+        SELECT 1
+        FROM employees e1
+        WHERE e1.id = letters.created_by
+          AND e1.office_id = ?
+    )`,
+    raw_html: ``,
+  },
 ];
 </script>
 

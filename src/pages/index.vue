@@ -436,7 +436,8 @@ const contents = [
     2.1.3: Update menu layout
             add option layout for mobile breakpoint
             alt report workplan text when work not done
-            add office filter to list all letter`,
+            add office filter to list all letter
+            list letter by sending(to) but if other employees are in same office also can view too.`,
     raw_html: "",
   },
   // {
