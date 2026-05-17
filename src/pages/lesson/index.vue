@@ -92,6 +92,61 @@ const contents = [
     )`,
     raw_html: ``,
   },
+  {
+    title: "create a progressing percentage for an API call",
+    description: `To create a progressing percentage for an API call, you need to track how many bytes have been downloaded versus the total size of the response.`,
+    is_content: true,
+    content: `
+    The server must send a Content-Length header for the percentage to be accurate. Without it, you won't know the "total" size.
+
+    Instead of waiting for the full response with response.json(), you iterate through the body's reader.
+    Javascript
+    async function fetchWithProgress(url) {
+      const response = await fetch(url);
+      const reader = response.body.getReader();
+      
+      // Get total size from headers
+      const contentLength = +response.headers.get('Content-Length');
+      
+      let receivedLength = 0; 
+      let chunks = []; 
+
+      while(true) {
+        const {done, value} = await reader.read();
+        
+        if (done) break;
+
+        chunks.push(value);
+        receivedLength += value.length;
+
+        // Calculate percentage
+        let percent = (receivedLength / contentLength) * 100;
+        
+        // Update your UI here
+        document.getElementById('progress-bar').style.width = percent%;
+      }
+
+      // Combine chunks into a single string/object
+      let chunksAll = new Uint8Array(receivedLength);
+      let position = 0;
+      for(let chunk of chunks) {
+        chunksAll.set(chunk, position);
+        position += chunk.length;
+      }
+
+      let result = new TextDecoder("utf-8").decode(chunksAll);
+      return JSON.parse(result);
+    }
+      
+    Using Axios (Easiest)If you use Axios, tracking progress is built-in via the onDownloadProgress and onUploadProgress configs.javascriptaxios.get(url, {
+      onDownloadProgress: (progressEvent) => {
+        const percentage = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+        console.log(percentage + '%');
+      }
+    });
+    `,
+    raw_html: ``,
+  },
 ];
 </script>
 
