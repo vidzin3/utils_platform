@@ -587,7 +587,7 @@ const contents = [
       git reset --hard ORIG_HEAD
 
       2. The Safe Way (Keep Local Changes)If you had local work you want to preserve while undoing the pull:
-      git reset --merge ORIG_HEAD
+      git reset --merge ORIG_HEAD (This resets your branch but tries to keep your local modifications)
 
       3. Using the Reflog (Most Precise)If you have done other things since the pull and ORIG_HEAD no longer points to the right spot:
         1. View history action
