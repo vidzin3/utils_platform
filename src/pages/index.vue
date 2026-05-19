@@ -576,6 +576,40 @@ const contents = [
       window.URL.revokeObjectURL(fileURL); // if link is releases an existing object URL which was previously created by calling URL.createObjectURL().`,
     raw_html: "",
   },
+  {
+    title: "rollback after git pull",
+    description: "",
+    is_content: true,
+    content: `To rollback after a git pull, use the command git reset --hard ORIG_HEAD.
+      This works because Git automatically saves your previous state in a special reference called ORIG_HEAD before performing a pull or merge.
+
+      1. The Quick Fix (Deletes Local Changes)If you just want to go back exactly to how things were before the pull and don't care about any unsaved work:
+      git reset --hard ORIG_HEAD
+
+      2. The Safe Way (Keep Local Changes)If you had local work you want to preserve while undoing the pull:
+      git reset --merge ORIG_HEAD
+
+      3. Using the Reflog (Most Precise)If you have done other things since the pull and ORIG_HEAD no longer points to the right spot:
+        1. View history action
+        git reflog
+
+        2. Find the state before the pull (usually labeled HEAD@{1})
+
+        3. Reset to that specific point:
+        git reset --hard HEAD@{1}
+
+      If You Have Merge Conflicts
+      If the pull resulted in conflicts and you haven't finished the merge yet, you can simply abort:
+      git merge --abort (This returns the repository to the state it was in before you started the git pull)
+      
+      Key Terms to Know
+      1. ORIG_HEAD: A backup pointer created by commands like pull or merge to help you undo them
+      
+      2. --hard: A flag that resets the staging area and working directory to match a commit.
+      
+      3. reflog: A local log that records every time the HEAD of a branch moves, allowing you to find "lost" commits`,
+    raw_html: "",
+  },
 ];
 </script>
 
