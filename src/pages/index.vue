@@ -631,7 +631,7 @@ const contents = [
           Enter the command below
         </div>
         <div class="rounded-l-sm rounded-r-lg w-full bg-red-500 relative h-[50px]">
-          <div class="flex items-center pl-2 w-full absolute rounded-l-sm rounded-r-md dark:bg-black left-[2px] h-full">
+          <div class="flex items-center flex-wrap pl-2 w-full absolute rounded-l-sm rounded-r-md dark:bg-black left-[2px] h-full text-wrap" style="word-wrap: break-word;">
             <span class="text-white font-bold text-md">[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12</span>
           </div>
         </div>
