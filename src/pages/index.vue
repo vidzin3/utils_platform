@@ -610,6 +610,40 @@ const contents = [
       3. reflog: A local log that records every time the HEAD of a branch moves, allowing you to find "lost" commits`,
     raw_html: "",
   },
+  {
+    title: "Cracking License microsoft (Window, Office)",
+    description: "",
+    is_content: false,
+    content: ``,
+    raw_html: `
+      <div class="flex flex-col gap-2">
+        <div>1. Open WindowPowerShell</div>
+        <div>2. Enter the commnad below</div>
+        <div class="rounded-l-sm rounded-r-lg w-full bg-red-500 relative h-[50px]">
+          <div class="flex items-center pl-2 w-full absolute rounded-l-sm rounded-r-md dark:bg-black left-[2px] h-full">
+            <span class="text-white font-bold text-md">irm https://get.activated.win | iex</span>
+          </div>
+        </div>
+        <div>
+          3. Having trouble (Blocked by ISP or Old Windows)
+        </div>
+        <div>
+          Enter the command below
+        </div>
+        <div class="rounded-l-sm rounded-r-lg w-full bg-red-500 relative h-[50px]">
+          <div class="flex items-center pl-2 w-full absolute rounded-l-sm rounded-r-md dark:bg-black left-[2px] h-full">
+            <span class="text-white font-bold text-md">[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12</span>
+          </div>
+        </div>
+        <div>After Off Security Protocol then enter command below</div>
+        <div class="rounded-l-sm rounded-r-lg w-full bg-red-500 relative h-[50px]">
+          <div class="flex items-center pl-2 w-full absolute rounded-l-sm rounded-r-md dark:bg-black left-[2px] h-full">
+            <span class="text-white font-bold text-md">irm https://get.activated.win | iex</span>
+          </div>
+        </div>
+      </div>
+    `,
+  },
 ];
 </script>
 
