@@ -437,7 +437,12 @@ const contents = [
             add option layout for mobile breakpoint
             alt report workplan text when work not done
             add office filter to list all letter
-            list letter by sending(to) but if other employees are in same office also can view too.`,
+            list letter by sending(to) but if other employees are in same office also can view too.
+    2.1.4: Update report exported
+            fix font excel from khmer mef1,2 to (khmer os moul, siem reap)
+            auto adjusting cell height when text wrapping
+            fix broken cell width
+            update letter procurement export excel`,
     raw_html: "",
   },
   // {
