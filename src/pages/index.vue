@@ -644,6 +644,37 @@ const contents = [
       </div>
     `,
   },
+  {
+    title: "Auto adjust height in cell for laravel excel",
+    description: "",
+    is_content: true,
+    content: `
+      AfterSheet::class => function(AfterSheet $event) {
+        $sheet = $event->sheet->getDelegate();
+        $highestRow = $sheet->getHighestRow();
+
+        // Auto height manually
+        for ($row = 11; $row <= $highestRow; $row++) {
+
+            // Description column starts around M
+            $text = $sheet->getCell('M' . $row)->getValue();
+
+            // Estimate line count
+            $length = mb_strlen($text);
+
+            // adjust this value to your column width
+            $lines = ceil($length / 40);
+
+            // minimum height
+            $height = max(30, $lines * 18);
+
+            $sheet->getRowDimension($row)
+                ->setRowHeight($height);
+        }
+      }
+    `,
+    raw_html: "",
+  },
 ];
 </script>
 
