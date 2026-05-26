@@ -656,6 +656,11 @@ const contents = [
         // Auto height manually
         for ($row = 11; $row <= $highestRow; $row++) {
 
+            $sheet->getStyle('A1:Z' . $heighestRow)
+              ->getAlignment()
+              ->setWrapText(true);
+
+            // after apply style wrap text to in each cell then
             // Description column starts around M
             $text = $sheet->getCell('M' . $row)->getValue();
 
@@ -672,6 +677,9 @@ const contents = [
                 ->setRowHeight($height);
         }
       }
+
+      Or applyStyle to template blade
+      style="overflow-wrap: break-word;word-wrap: break-word;"
     `,
     raw_html: "",
   },
