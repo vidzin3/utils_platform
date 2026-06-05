@@ -171,16 +171,16 @@ const contents = [
           <div class="grid lg:grid-cols-2 gap-5">
             <div class="bg-zinc-800 rounded-xl p-5 border border-zinc-700">
               <div class="flex items-center justify-between mb-4">
-                <h3 class="font-semibold text-lg">⌚ Casio Watches</h3>
+                <h3 class="font-semibold text-lg">⌚ Collected Watches</h3>
                 <span class="text-sm bg-green-500/20 text-green-300 px-3 py-1 rounded-full">
                   $10 - $15
                 </span>
               </div>
 
               <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">F91W</span>
-                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">A158</span>
-                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">A168</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">F91W (Selected)</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">Poedagar (Selected)</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">Casio MTP-B145D-2A1 (Selected)</span>
               </div>
             </div>
 
