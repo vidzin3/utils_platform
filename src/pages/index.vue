@@ -445,7 +445,10 @@ const contents = [
             update letter procurement export excel
     2.1.5: Update Form fix transaction
             add descript detail of fix transaction
-            add backup database function`,
+            add backup database function
+    2.1.6: Update User
+            add disable user feature
+            add retrieved all users information`,
     raw_html: "",
   },
   // {
