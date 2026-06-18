@@ -51,19 +51,25 @@ const contents = [
             <h2 class="text-xl font-semibold">Savings Goal</h2>
           </div>
           <div class="bg-zinc-800/60 rounded-xl p-4 border border-zinc-700">
-            <p class="text-zinc-300">
-              Get <span class="text-green-400 font-semibold">$400</span> salary bonus
-              and add it to savings until reaching
-              <span class="text-cyan-400 font-semibold">$1000</span>.
-            </p>
+            <div class="flex justify-between items-center">
+              <p class="text-zinc-300">
+                Get <span class="text-green-400 font-semibold">$400</span> salary bonus
+                and add it to savings until reaching
+                <span class="text-cyan-400 font-semibold">$1000</span>.
+              </p>
+              <div class="flex g-2 items-center px-2 border border-green-500 bg-green-400/15 rounded-full">
+                <div class="rounded-full w-[10px] h-[10px] mr-2 bg-green-500"></div>
+                <span>done</span>
+              </div>
+            </div>
             <div class="mt-4">
               <div class="flex justify-between text-sm mb-2 text-zinc-400">
                 <span>Progress</span>
-                <span>500$+$400 / $1000</span>
+                <span>$1100 / $1000</span>
               </div>
               <div class="w-full h-3 bg-zinc-700 rounded-full overflow-hidden relative">
-                <div class="absolute h-full w-[90%] bg-gradient-to-r from-green-400 to-red-400 rounded-full"></div>
-                <div class="absolute h-full w-[50%] bg-gradient-to-r from-green-400 to-cyan-400 rounded-full"></div>
+                <div class="absolute h-full w-[100%] bg-gradient-to-r from-green-400 to-red-400 rounded-full"></div>
+                <div class="absolute h-full w-[100%] bg-gradient-to-r from-green-400 to-cyan-400 rounded-full"></div>
               </div>
             </div>
           </div>
