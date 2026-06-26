@@ -454,7 +454,9 @@ const contents = [
             add backup database function
     2.1.6: Update User
             add disable user feature
-            add retrieved all users information`,
+            add retrieved all users information
+    2.1.7: Update Event report
+	          add location field to event report`,
     raw_html: "",
   },
   // {
