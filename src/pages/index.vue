@@ -456,7 +456,10 @@ const contents = [
             add disable user feature
             add retrieved all users information
     2.1.7: Update Event report
-	          add location field to event report`,
+	          add location field to event report
+    2.1.8: Update letter out
+            improvement performance load data ref letter in
+            fix bugs`,
     raw_html: "",
   },
   // {
