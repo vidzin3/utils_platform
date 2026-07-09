@@ -459,7 +459,11 @@ const contents = [
 	          add location field to event report
     2.1.8: Update letter out
             improvement performance load data ref letter in
-            fix bugs`,
+            fix bugs
+    2.1.9: Update Send letter Transaction
+            fix calculated stage user by position with permission to find by user stage model
+            fix update (fix transaction) in show letter do not to force refetch api
+            fix bugs `,
     raw_html: "",
   },
   // {
