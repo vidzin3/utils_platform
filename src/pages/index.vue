@@ -187,6 +187,7 @@ const contents = [
                 <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">F91W (Selected)</span>
                 <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">Poedagar (Selected)</span>
                 <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">Casio MTP-B145D-2A1 (Selected)</span>
+                <span class="px-3 py-2 rounded-lg bg-zinc-700 text-zinc-200">Casio MTP-1302D Blud dial (Selected)</span>
               </div>
             </div>
 
@@ -199,6 +200,10 @@ const contents = [
               </div>
 
               <div class="space-y-3">
+                <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
+                  <span>Blackshark GS3 Ultra</span>
+                  <span class="text-cyan-300">$85</span>
+                </div>
 
                 <div class="flex items-center justify-between bg-zinc-700/60 rounded-lg p-3">
                   <span>CMF Watch Pro 2</span>
