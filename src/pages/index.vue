@@ -468,7 +468,10 @@ const contents = [
     2.1.9: Update Send letter Transaction
             fix calculated stage user by position with permission to find by user stage model
             fix update (fix transaction) in show letter do not to force refetch api
-            fix bugs `,
+            fix bugs
+    2.2.0: Update Events
+            fix failed redirect to show event after add employee to event
+            add button route to show event in card calendar`,
     raw_html: "",
   },
   // {
