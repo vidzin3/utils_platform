@@ -471,7 +471,10 @@ const contents = [
             fix bugs
     2.2.0: Update Events
             fix failed redirect to show event after add employee to event
-            add button route to show event in card calendar`,
+            add button route to show event in card calendar
+            fix send forward errro when event is not ref by letter
+            fix create event on null letter_id
+            add view details of activity log`,
     raw_html: "",
   },
   // {
