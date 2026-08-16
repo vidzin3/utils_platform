@@ -80,7 +80,7 @@ const contents = [
             <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">
               2
             </div>
-            <h2 class="text-xl font-semibold">Birthday Gifts (Month 7/8)</h2>
+            <h2 class="text-xl font-semibold">Birthday Gifts</h2>
           </div>
 
           <div class="grid md:grid-cols-2 gap-4">
@@ -171,7 +171,7 @@ const contents = [
             <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
               4
             </div>
-            <h2 class="text-xl font-semibold">New Watch Wishlist</h2>
+            <h2 class="text-xl font-semibold">My Watch Wishlist</h2>
           </div>
 
           <div class="grid lg:grid-cols-2 gap-5">

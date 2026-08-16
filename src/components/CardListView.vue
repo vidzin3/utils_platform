@@ -57,9 +57,9 @@ const props = defineProps({
           class="*:rounded-lg *:bg-white/10! dark:*:bg-white/5! *:inset-ring *:inset-ring-white/10 dark:*:inset-ring-white/5"
         >
           <pre class="w-full overflow-auto">
-            <code v-if="content.length > 0">
+            <template v-if="content.length > 0">
               {{ content }}
-            </code>
+            </template>
           </pre>
         </div>
         <div
