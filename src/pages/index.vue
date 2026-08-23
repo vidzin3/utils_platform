@@ -474,7 +474,10 @@ const contents = [
             add button route to show event in card calendar
             fix send forward errro when event is not ref by letter
             fix create event on null letter_id
-            add view details of activity log`,
+            add view details of activity log
+    2.2.1: Update Events
+            add no number to list event
+            refector format date time to khmer Datetime (list, show, report)`,
     raw_html: "",
   },
   // {
