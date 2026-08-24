@@ -477,7 +477,9 @@ const contents = [
             add view details of activity log
     2.2.1: Update Events
             add no number to list event
-            refector format date time to khmer Datetime (list, show, report)`,
+            refector format date time to khmer Datetime (list, show, report)
+           Update login
+            fix responsive login template`,
     raw_html: "",
   },
   // {
