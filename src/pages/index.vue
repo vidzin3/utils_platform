@@ -479,7 +479,11 @@ const contents = [
             add no number to list event
             refector format date time to khmer Datetime (list, show, report)
            Update login
-            fix responsive login template`,
+            fix responsive login template
+    2.2.2: Update Events
+            add search and employee select filter to event report
+           Update Letters
+            save data object to session to prevent list all letter dialog after back history page`,
     raw_html: "",
   },
   // {
