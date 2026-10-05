@@ -483,7 +483,9 @@ const contents = [
     2.2.2: Update Events
             add search and employee select filter to event report
            Update Letters
-            save data object to session to prevent list all letter dialog after back history page`,
+            save data object to session to prevent list all letter dialog after back history page
+           Update revenue
+            fix some bug preview revenue by organization and table data revenue transactions`,
     raw_html: "",
   },
   // {
