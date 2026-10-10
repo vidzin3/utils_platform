@@ -485,7 +485,10 @@ const contents = [
            Update Letters
             save data object to session to prevent list all letter dialog after back history page
            Update revenue
-            fix some bug preview revenue by organization and table data revenue transactions`,
+            fix some bug preview revenue by organization and table data revenue transactions
+    2.2.3: Update Letters
+            add case return letter return back on function finished letter
+            add received date form to fix transaction letter`,
     raw_html: "",
   },
   // {
