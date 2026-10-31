@@ -488,7 +488,11 @@ const contents = [
             fix some bug preview revenue by organization and table data revenue transactions
     2.2.3: Update Letters
             add case return letter return back on function finished letter
-            add received date form to fix transaction letter`,
+            add received date form to fix transaction letter
+    2.2.4: Update letter outs
+            fix when update letter out for normal letter cant be remove ref letter in id
+    2.2.5: Update Letter ins and outs
+            add Search (Letter in) feature to appFormCreate for create,update letter in and out (move to globe search as soon)`,
     raw_html: "",
   },
   // {
