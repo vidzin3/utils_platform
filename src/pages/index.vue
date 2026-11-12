@@ -486,13 +486,21 @@ const contents = [
             save data object to session to prevent list all letter dialog after back history page
            Update revenue
             fix some bug preview revenue by organization and table data revenue transactions
+    2.2.2: Update Events
+            add search and employee select filter to event report
+           Update Letters
+            save data object to session to prevent list all letter dialog after back history page
+           Update revenue
+            fix some bug preview revenue by organization and table data revenue transactions
     2.2.3: Update Letters
             add case return letter return back on function finished letter
             add received date form to fix transaction letter
-    2.2.4: Update letter outs
+    2.2.4: Update Letter outs
             fix when update letter out for normal letter cant be remove ref letter in id
     2.2.5: Update Letter ins and outs
-            add Search (Letter in) feature to appFormCreate for create,update letter in and out (move to globe search as soon)`,
+            add Search (Letter in) feature to appFormCreate for create,update letter in and out (move to globe search as soon)
+    2.2.6: Update Events
+            add delete to event and fix event update targeted null on latter id ref`,
     raw_html: "",
   },
   // {
